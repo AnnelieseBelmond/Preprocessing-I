@@ -145,6 +145,24 @@ header nav a {
   padding: 30px;
   color: gray;
 }
-header img {
-  width: 100px;
+header .top {
+  display: flex;
+  flex-flow: column;
+  margin-left: 50px;
+}
+header .top img {
+  width: 200px;
+  padding: 5px;
+  background: gray;
+}
+header .top h1 {
+  font-size: 3rem;
+}
+header .top p {
+  margin: 20 0px;
+  font-size: 2rem;
+}
+header hr {
+  width: 80%;
+  margin-left: 3%;
 }
