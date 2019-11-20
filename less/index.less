@@ -57,42 +57,64 @@ html, body {
     height: 100%;
 }
 
-header {
-	nav{
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-		a{
-			text-decoration: none;
-			margin: 0 30px;
-			padding: 30px;
-			color: gray;
+.container{
+	header {
+		nav{
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+			a{
+				text-decoration: none;
+				margin: 0 30px;
+				padding: 30px;
+				color: gray;
+			}
+		}
+		.top{
+			display: flex;
+			flex-flow: column;
+			margin-left:50px;
+			img{
+				width: 200px;
+				padding: 5px;
+				background: gray;
+				}
+			h1{
+				font-size: 3rem;
+			
+			}
+			p{
+				margin: 20 0px;
+				font-size: 2rem;
+			}
+			button{
+				width:10%;
+				margin: 10px;
+			}
+		}
+		hr{
+			width: 80%;
+			margin-left: 3%;
 		}
 	}
-	.top{
+	
+	.about{
 		display: flex;
-		flex-flow: column;
-		margin-left:50px;
-		img{
-			width: 200px;
-			padding: 5px;
-			background: gray;
-			}
-		h1{
-			font-size: 3rem;
-		
+		flex-flow: row wrap;
+		margin-left: 3%;
+		h2{
+			font-size: 1.5rem;
+			margin: 10px 0;
 		}
 		p{
-			margin: 20 0px;
-			font-size: 2rem;
+			font-size: 1.2rem;
 		}
-	}
-	hr{
-		width: 80%;
-		margin-left: 3%;
+		.perks{
+			width: 30%;
+			margin-right: 100px;
+		}
+		
 	}
 }
-
-
 
 
