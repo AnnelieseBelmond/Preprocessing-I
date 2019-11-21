@@ -60,6 +60,13 @@ html, body {
 @font-color: pink;
 @font-weight: 200;
 
+.flexrowwrap{
+	display:flex;
+	flex-flow: row wrap;
+}
+
+
+
 .container{
 	width: 100%;
 	@media (max-width:500px){
@@ -121,9 +128,11 @@ html, body {
 		}
 		
 	.about{
-		display: flex;
-		flex-flow: row wrap;
+		.flexrowwrap();
 		margin-left: 3%;
+		@media(max-width:500px){
+			justify-content: center;
+		}
 		h2{
 			font-size: 1.5rem;
 			margin: 10px 0;
@@ -134,11 +143,11 @@ html, body {
 		.perks{
 			width: 30%;
 			margin-right: 100px;
+
 		}
 	}
 	.work{
-		display: flex;
-		flex-direction: row wrap;
+		.flexrowwrap();
 		width: 50%;
 		h2{
 			font-size: 1.5rem;

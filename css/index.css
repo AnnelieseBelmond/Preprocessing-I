@@ -134,6 +134,10 @@ html,
 body {
   height: 100%;
 }
+.flexrowwrap {
+  display: flex;
+  flex-flow: row wrap;
+}
 .container {
   width: 100%;
 }
@@ -204,6 +208,11 @@ body {
   flex-flow: row wrap;
   margin-left: 3%;
 }
+@media (max-width: 500px) {
+  .container .about {
+    justify-content: center;
+  }
+}
 .container .about h2 {
   font-size: 1.5rem;
   margin: 10px 0;
@@ -217,7 +226,7 @@ body {
 }
 .container .work {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   width: 50%;
 }
 .container .work h2 {
