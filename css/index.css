@@ -156,6 +156,7 @@ body {
     width: 50%;
     justify-content: center;
     margin-left: 100px;
+    padding-bottom: 10px;
   }
 }
 .container header nav a {
@@ -200,7 +201,7 @@ body {
   }
 }
 .container header hr {
-  width: 80%;
+  width: 90%;
   margin-left: 3%;
 }
 .container .about {
@@ -236,10 +237,39 @@ body {
 .container .work p {
   margin: 10px 100px;
 }
-.copyright {
+.container .work .box1 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+}
+.container .work .box2 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: hotpink;
+}
+.container .work .box3 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: salmon;
+}
+.container .copyright {
   display: inline-block;
   height: 50px;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   background-color: gray;
+  margin-top: 130px;
+  margin-left: 3%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .copyright {
+    margin-left: 25%;
+  }
+}
+.container .copyright p {
+  padding-top: 5px;
 }
