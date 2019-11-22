@@ -138,6 +138,14 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
+.boxproperties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 100px;
+}
 .container {
   width: 100%;
 }
@@ -225,32 +233,61 @@ body {
   width: 30%;
   margin-right: 100px;
 }
+@media (max-width: 500px) {
+  .container .about .perks {
+    width: 80%;
+    margin: 20px 50px;
+  }
+}
+.container h2 {
+  font-size: 1.5rem;
+  margin: 20px 21% 0;
+  align-self: center;
+}
 .container .work {
   display: flex;
   flex-flow: row wrap;
   width: 50%;
+  margin: 20px 0;
+  justify-content: space-evenly;
 }
-.container .work h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
+@media (max-width: 500px) {
+  .container .work {
+    flex-direction: column;
+    margin-left: 20%;
+  }
 }
-.container .work p {
-  margin: 10px 100px;
+.container .work h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
 }
 .container .work .box1 {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100px;
   width: 100px;
   background-color: pink;
 }
+.container .work .box1 p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .container .work .box2 {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100px;
   width: 100px;
   background-color: hotpink;
 }
 .container .work .box3 {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100px;
   width: 100px;
   background-color: salmon;
@@ -268,6 +305,7 @@ body {
 @media (max-width: 500px) {
   .container .copyright {
     margin-left: 25%;
+    color: white;
   }
 }
 .container .copyright p {

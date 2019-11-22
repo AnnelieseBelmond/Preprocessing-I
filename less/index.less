@@ -65,6 +65,15 @@ html, body {
 	flex-flow: row wrap;
 }
 
+.boxproperties{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100px;
+	width: 100px;
+}
+
 
 
 .container{
@@ -144,35 +153,47 @@ html, body {
 		.perks{
 			width: 30%;
 			margin-right: 100px;
+			@media (max-width:500px){
+				width: 80%;
+				margin:20px 50px;
+			}
 
 		}
+	}
+	h2{
+		font-size: 1.5rem;
+		margin: 20px 21% 0;
+		align-self: center;
 	}
 	.work{
 		.flexrowwrap();
 		width: 50%;
-		h2{
-			font-size: 1.5rem;
-			margin: 10px 0;
+		margin: 20px 0;
+		justify-content: space-evenly;
+		@media (max-width:500px){
+			flex-direction: column;
+			margin-left: 20%;
 		}
-		p{
-			margin: 10px 100px;
-		}
+		h3{
+			font-size: 1.2rem;
+			border-bottom: 1px solid black;
+			}
+
 		.box1{
-			display:inline-block;
-			height: 100px;
-			width: 100px;
+			.boxproperties;
 			background-color: @font-color;
+			p{
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+			
 		}
 		.box2{
-			display:inline-block;
-			height: 100px;
-			width: 100px;
+			.boxproperties;
 			background-color: hotpink;
 		}
 		.box3{
-			display:inline-block;
-			height: 100px;
-			width: 100px;
+			.boxproperties;
 			background-color: salmon;
 		}
 	
@@ -188,6 +209,7 @@ html, body {
 		text-align: center;
 		@media(max-width:500px){
 			margin-left: 25%;
+			color: white;
 		}
 		p{
 			padding-top: 5px;
